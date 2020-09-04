@@ -10,7 +10,7 @@ module.exports = {
 		mainjs: [
 			'webpack-dev-server/client?http://' + host + ':' + port,
 			'webpack/hot/dev-server',
-			'./src/app/index.js'
+			'./index.js'
 		],
 	},
 	output: {
@@ -30,9 +30,7 @@ module.exports = {
 		new webpack.HotModuleReplacementPlugin(),
 		new CopyWebpackPlugin([
             { from: './src/assets', to: 'assets' },
-            { from: './src/assets/favicon.ico', to: 'favicon.ico' },
-            // { from: './src/app/index.js', to: 'index.js' },
-            { from: './src/app/index.html', to: 'index.html' }
+            { from: './src/assets/favicon.ico', to: 'favicon.ico' }
 		])
 	],
 	module: {

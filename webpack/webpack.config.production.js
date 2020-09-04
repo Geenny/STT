@@ -25,7 +25,7 @@ const object = {
             { from: './src/assets/favicon.ico', to: 'favicon.ico' }
         ]),
         new HtmlWebpackPlugin({
-            template: 'index.html',
+            template: './index.html',
             inject: false,
             minify: {
                 collapseWhitespace: true,
@@ -45,7 +45,7 @@ const object = {
 				query: {
 					presets: [ 'es2015', 'stage-0' ]
 				}
-			}
+            }
 		]
 	}
 };

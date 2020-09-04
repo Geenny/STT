@@ -94,6 +94,5 @@ export default class Reels extends EventDispatcher {
             const reel = this._reels[ i ];
             reel.positionSet( this.position );
         }
-        console.log( this.position );
     }
 }

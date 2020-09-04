@@ -1,13 +1,12 @@
-import MainApplication from "./main/MainApplication";
+import MainApplication from "./src/app/main/MainApplication";
 
 const HTMLElement = document.getElementById( 'ApplicationContainer' );
-const CONFIG = {}; // require('./core/config/CONFIG');
 
 function onStart() {
 
     const application = new MainApplication();
     application.HTMLElement = HTMLElement;
-    application.init( CONFIG );
+    application.init( {} );
 
 }
 

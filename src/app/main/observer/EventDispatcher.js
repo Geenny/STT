@@ -14,7 +14,6 @@ export default class EventDispatcher {
     dispatchEvent( event, isLog = false ) {
         this._dispatching = true;
         if ( !event.target ) event.target = this;
-        // if ( isLog ) console.log( event );
         this._dispatcher.forEach( target => {
             if ( this._stop ) return;
             if ( target ) {
