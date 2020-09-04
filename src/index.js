@@ -1,4 +1,4 @@
-import MainApplication from "./src/app/main/MainApplication";
+import MainApplication from "./app/main/MainApplication";
 
 const HTMLElement = document.getElementById( 'ApplicationContainer' );
 

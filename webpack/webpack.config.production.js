@@ -8,6 +8,7 @@ const outputPath = path.resolve(__dirname, '../dist');
 
 const object = {
     mode: 'production',
+    entry: './src/index.js',
     output: {
         filename: './bundle.js',
 		path: outputPath,
@@ -22,10 +23,11 @@ const object = {
         }),
         new CopyWebpackPlugin([
             { from: './src/assets', to: 'assets' },
-            { from: './src/assets/favicon.ico', to: 'favicon.ico' }
+            { from: './src/assets/favicon.ico', to: 'favicon.ico' },
+            { from: './src/index.html', to: 'index.html' }
         ]),
         new HtmlWebpackPlugin({
-            template: './index.html',
+            template: './src/index.html',
             inject: false,
             minify: {
                 collapseWhitespace: true,
@@ -45,10 +47,9 @@ const object = {
 				query: {
 					presets: [ 'es2015', 'stage-0' ]
 				}
-            }
+			}
 		]
 	}
 };
 
 module.exports = object;
-
