@@ -4,4 +4,4 @@ Follow these steps to launch the application.
 3. npm i
 4. npm start
 
-![Alt text](/scr/assets/images/screenshot/1.jpg?raw=true "Screenshot 1")
+![Alt text](/src/assets/images/screenshot/1.jpg?raw=true "Screenshot 1")
